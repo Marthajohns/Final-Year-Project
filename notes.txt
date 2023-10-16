@@ -1,0 +1,16 @@
+Registration [done].
+---------------------
+Has duplicate email checking/user availability check through Ajax
+Uses Ajax for registration
+Password Strength validation
+Confirm Password validation
+[*] Sends verification code to email
+Redirects to verification page on successful registration
+
+Login [done]
+------------------------------
+Uses Ajax for login 
+Redirects to home page on successful registration
+
+Home page[]
+-----------------------------------
