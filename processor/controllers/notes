@@ -1,1 +1,256 @@
+check if file exists:
+=======================
+if (file_exists('example.png')) {
+	// File exists
+}
 
+=====================================
+This snippet will unzip a zipped file on your server:
+$zip = new ZipArchive;
+$file = $zip->open('file.zip');
+if ($file) {
+	$zip->extractTo('/extract_path/');
+	$zip->close();
+	echo 'Archive extracted!';
+}
+==========================================================
+This snippet will format your number with a comma:
+$num = number_format(1000);
+echo $num; // 1,000
+=========================================================
+Format number with decimals:
+$num = number_format(1000.12, 2);
+echo $num; // 1,000.12
+=====================================
+<div id="editablediv" contenteditable="true">
+<?php ike_fetchcontent("basics", "id='1'", 'content', 'id  DESC', "limit 1" ); ?>
+</div>
+<form id="form" method="post" action="../engine/engine.php?authkey=al3al31sk46dj79fhg1sk46al31sk46dj79fhgdal3al31sk46dj79fhg1sk46al31sk46dj79fhgdj79fal31sk46dj79fhghgj79fal31sk46dj79fhghg" onsubmit="return getContent()">
+    <textarea id="formtextarea" name="data[content]" style="display:none"></textarea>
+    <input  type="hidden" name="back" value="<?php echo $currentlink; ?>" />
+    <input  type="hidden" name="id" value="1" />
+    <input  type="hidden" name="table" value="basics" />
+    <input  type="hidden" name="data[author]" value="Name" />
+    <input type="submit" name="edit" value="Save" class="btn btn-xs btn-primary">
+</form>
+==================================================================================
+<div class="row">
+  <div class="col-md-6">
+  <!--form and editable content (title)-->
+    <div class="one tr">
+    <h3 ><?php ike_fetchcontent("basics", "id='1'", 'title', 'id  DESC', "limit 1" ); ?><a href="#" class="btn btn-xs btn-primary tooltiptext">Edit</a></h3>
+    <form class="two" method="POST" action="../engine/engine.php?authkey=al3al31sk46dj79fhg1sk46al31sk46dj79fhgdal3al31sk46dj79fhg1sk46al31sk46dj79fhgdj79fal31sk46dj79fhghgj79fal31sk46dj79fhghg" enctype="multipart/form-data">
+    <input type="text" class="form-control"  name="data[title]" value="<?php ike_fetchcontent("basics", "id='1'", 'title', 'id  DESC', "limit 1" ); ?>">
+    <input  type="hidden" name="back" value="<?php echo $currentlink; ?>" />
+    <input  type="hidden" name="id" value="1" />
+    <input  type="hidden" name="table" value="basics" />
+    <input  type="hidden" name="data[author]" value="Name" />
+    <input type="submit" name="edit" value="Save" class="btn btn-xs btn-success">
+  </form>
+  </div>
+    <!--form and editable content (content)-->
+    <div class="one tr">
+    <p><?php ike_fetchcontent("basics", "id='1'", 'content', 'id  DESC', "limit 1" ); ?>
+    <a href="#" class="btn btn-xs btn-primary tooltiptext">Edit</a></p>
+    <form class="two" method="POST" action="../engine/engine.php?authkey=al3al31sk46dj79fhg1sk46al31sk46dj79fhgdal3al31sk46dj79fhg1sk46al31sk46dj79fhgdj79fal31sk46dj79fhghgj79fal31sk46dj79fhghg" enctype="multipart/form-data">
+    <textarea class="summernote"  name="data[content]"><?php ike_fetchcontent("basics", "id='1'", 'content', 'id  DESC', "limit 1" ); ?></textarea>
+    <input  type="hidden" name="back" value="<?php echo $currentlink; ?>" />
+    <input  type="hidden" name="id" value="1" />
+    <input  type="hidden" name="table" value="basics" />
+    <input  type="hidden" name="data[author]" value="Name" />
+    <input type="submit" name="edit" value="Save" class="btn btn-xs btn-success">
+  </form>
+  </div>
+  <!--end-->
+</div>
+<div class="col-md-6">
+<!--form and editable content (title)-->
+  <div class="one tr">
+  <h3 ><?php ike_fetchcontent("basics", "id='1'", 'title', 'id  DESC', "limit 1" ); ?><a href="#" class="btn btn-xs btn-primary tooltiptext">Edit</a></h3>
+  <form class="two" method="POST" action="../engine/engine.php?authkey=al3al31sk46dj79fhg1sk46al31sk46dj79fhgdal3al31sk46dj79fhg1sk46al31sk46dj79fhgdj79fal31sk46dj79fhghgj79fal31sk46dj79fhghg" enctype="multipart/form-data">
+  <input type="text" class="form-control"  name="data[title]" value="<?php ike_fetchcontent("basics", "id='1'", 'title', 'id  DESC', "limit 1" ); ?>">
+  <input  type="hidden" name="back" value="<?php echo $currentlink; ?>" />
+  <input  type="hidden" name="id" value="1" />
+  <input  type="hidden" name="table" value="basics" />
+  <input  type="hidden" name="data[author]" value="Name" />
+  <input type="submit" name="edit" value="Save" class="btn btn-xs btn-success">
+</form>
+</div>
+  <!--form and editable content (content)-->
+  <div class="one tr">
+  <p><?php ike_fetchcontent("basics", "id='1'", 'content', 'id  DESC', "limit 1" ); ?>
+  <a href="#" class="btn btn-xs btn-primary tooltiptext">Edit</a></p>
+  <form class="two" method="POST" action="../engine/engine.php?authkey=al3al31sk46dj79fhg1sk46al31sk46dj79fhgdal3al31sk46dj79fhg1sk46al31sk46dj79fhgdj79fal31sk46dj79fhghgj79fal31sk46dj79fhghg" enctype="multipart/form-data">
+  <textarea class="summernote"  name="data[content]"><?php ike_fetchcontent("basics", "id='1'", 'content', 'id  DESC', "limit 1" ); ?></textarea>
+  <input  type="hidden" name="back" value="<?php echo $currentlink; ?>" />
+  <input  type="hidden" name="id" value="1" />
+  <input  type="hidden" name="table" value="basics" />
+  <input  type="hidden" name="data[author]" value="Name" />
+  <input type="submit" name="edit" value="Save" class="btn btn-xs btn-success">
+</form>
+</div>
+<!--end-->
+</div>
+</div>
+==================================================================================
+style="white-space: pre-line"
+========================================================================
+ Hover On/Off
+
+$("a").hover(
+  function () {
+    // code on hover over
+  },
+  function () {
+    // code on away from hover
+  }
+);
+
+======================================================================
+Prevent Anchor Links from Loading
+
+$("a").on("click", function(e){
+  e.preventDefault();
+});
+================================================================
+Scroll to Top
+
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+=====================================================================
+Animate Template
+
+$('p').animate({
+    left: '+=90px',
+    top: '+=150px',
+    opacity: 0.25
+  }, 900, 'linear', function() {
+    // function code on animation complete
+});
+=============================================================
+Toggle CSS Classes
+
+$('nav a').toggleClass('selected');
+===============================================================
+Toggle Visibility
+
+$("a.register").on("click", function(e){
+  $("#signup").fadeToggle(750, "linear");
+});
+=================================================
+Keystroke Events
+
+$('input').keydown(function(e) {
+  // variable e contains keystroke data
+  // only accessible with .keydown()
+  if(e.which == 11) {
+     e.preventDefault();
+  }
+});
+
+$('input').keyup(function(event) {
+  // run other event codes here               
+});
+=============================================================
+Equal Column Heights
+
+var maxheight = 0;
+$("div.col").each(function(){
+  if($(this).height() > maxheight) { maxheight = $(this).height(); }
+});
+
+$("div.col").height(maxheight);
+==========================================================================
+Append New HTML
+
+var sometext = "here is more HTML";
+$("p#text1").append(sometext); // added after
+$("p#text1").prepend(sometext); // added before
+=============================================================
+Setting & Getting Attributes
+
+var alink = $("a#user").attr("href"); // obtain href attribute value
+$("a#user").attr("href", "http://www.google.com/"); // set the href attribute to a new value
+$("a#user").attr({
+  alt: "the classiest search engine",
+  href: "http://www.google.com/"
+}); // set more than one attribute to new values
+=================================================================================================
+Traversing the DOM
+
+$("div#home").prev("div"); // find the div previous in relation to the current div
+$("div#home").next("ul"); // find the next ul element after the current div
+$("div#home").parent(); // returns the parent container element of the current div
+$("div#home").children("p"); // returns only the paragraphs found inside the current div
+================================================================================================
+cler form
+<script language="javascript">
+$(document).ready(function(){
+$('#formID')[0].reset();
+});
+</script>
+============================================================================
+change div color randomly
+$(document).ready(function() {
+changeColor();
+});
+ 
+function changeColor() {
+var rndColors = ["#00FF00", "#CCCCCC", "#995499", "#FFFFFF", "#FF9900"];
+var selColor = Math.floor(Math.random() * rndColors.length);
+$('div').css("background-color", rndColors[selColor]);
+setTimeout(changeColor, 1000);
+}
+=================================================================================
+smooth back to top
+
+$("a[href='#top']").click(function() {
+$("html, body").animate({ scrollTop: 0 }, "slow");
+return false;
+});
+=========================================================================
+check for working internet
+
+function checkInternet() {
+var status = navigator.onLine;
+if (status) {
+alert("Working");
+} else {
+alert("Not Working ");
+}
+}
+==================================================================
+prevent right click
+
+$(function(){
+$(document).on("contextmenu",function(e){
+e.preventDefault();
+});
+});
+
+$(document).ready(function () {
+$(this).bind("contextmenu", function(e) {
+e.preventDefault();
+});
+});
+====================================================================
+check if an ellement is hidden or not 
+
+$(document).ready(function () {
+$(element).is(":visible");
+});
+====================================================================
+check if checkbox is checked
+
+$(document).ready(function () {
+if($(element).is(':checked')) {
+// checked
+} else {
+// unchecked
+}
+});
+=========================================================================
+
+============================================================
